@@ -1,5 +1,12 @@
 # Advanced React JS Training
-----
+
+Client: Philips, Bangalore
+
+Date: 24th September 2018
+
+Duration: 3 days
+
+--- 
 
 <img src="ss1.png" />
 
