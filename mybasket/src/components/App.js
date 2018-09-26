@@ -71,7 +71,8 @@ class App extends Component {
             <Provider store={store}>
                 <Router>
                     <div className="container">
-                        <AppHeader />
+                        <Route path="/"
+                            component={AppHeader} />
                         <div className="row">
                             <div className="col-sm-3">
                                 <Route path="/"

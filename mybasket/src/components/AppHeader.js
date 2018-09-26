@@ -26,7 +26,10 @@ class AppHeader extends PureComponent {
             output = (<div className="form-inline">
                 Hello, {loggedInUser.name}
                 <button className="btn btn-outline-danger"
-                    onClick={() => this.props.logout()}>Logout</button>
+                    onClick={() => {
+                        this.props.logout();
+                        this.props.history.push('/login');
+                    }}>Logout</button>
             </div>);
         }
 

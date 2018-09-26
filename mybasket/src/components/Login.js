@@ -15,6 +15,7 @@ class Login extends Component {
 
     submitHandler = () => {
         this.props.login({ ...this.state }); // thunk action
+        this.props.history.push('/');
     }
 
     render() {

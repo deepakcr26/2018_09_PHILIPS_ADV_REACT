@@ -17,6 +17,7 @@ class Register extends Component {
 
     submitHandler = () => {
         this.props.registerNewUser({ ...this.state }); // thunk action
+        this.props.history.push('/');
         // p1 = Object.assign({}, this.state);
     }
 

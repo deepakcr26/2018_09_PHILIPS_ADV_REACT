@@ -56,12 +56,14 @@ class CartDetails extends Component {
     }
 
     submitHandler = () => {
-        let { loggedInUser, lineItems, placeOrder } = this.props;
+        let { loggedInUser, lineItems, placeOrder, history } = this.props;
         if (loggedInUser !== null) {
             placeOrder(lineItems, loggedInUser.token); // thunk action
+            window.swal('My Basket', 'Order placed successfully', 'success')
+            history.push('/');
         }
         else {
-            // redirect the user to login form
+            history.push('/login');
         }
     }
 }
