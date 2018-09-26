@@ -37,7 +37,7 @@ class Sidebar extends PureComponent {
                 <Panel title="Brands" path="brand" data={this.props.brands} />
                 <br />
                 <p className="text-center lead">
-                    <Link to="/products" >All products</Link>
+                    <Link to="/" >All products</Link>
                 </p>
                 <CartInfo />
             </div>
